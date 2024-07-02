@@ -1,34 +1,51 @@
-# Data Scientist Challenge
+# World Happiness Analysis
 
-## Description of the problem
+## Project Description
+
+This project utilizes world happiness data to develop and evaluate three machine learning models:
+
+1. Linear Regression
+2. Random Forest Regressor
+3. Random Forest Classifier
+
+The data is contained in the `data/archive` folder, but ideally, it should be stored in a database for easier management and access.
+
+## Requirements
+
+### Library Installation
+
+It is recommended to use a virtual environment to manage the project's dependencies. To create and activate a virtual environment, you can use the following commands:
+
+```bash
+# Create a virtual environment
+python -m venv env
+
+# Activate the virtual environment on Windows
+.\env\Scripts\activate
+
+# Activate the virtual environment on macOS/Linux
+source env/bin/activate
+```
+
+Once the virtual environment is activated, install the required libraries using `pip`:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Data
+
+Ensure the data files are located in the `data/archive` folder. The data should include CSV files for the years 2015 to 2019.
+
+## Running the Project
+
+To run the project, execute all the cells from top to bottom in the `regression_and_classification.ipynb` Jupyter Notebook. This notebook contains all the necessary steps for data preprocessing, model training, evaluation, and feature importance analysis.
+
+### Models Used
+
+1. **Linear Regression**: Used to predict the happiness score based on various socio-economic factors.
+2. **Random Forest Regressor**: Another model used to predict the happiness score with potentially better accuracy and handling of non-linear relationships.
+3. **Random Forest Classifier**: Used to classify countries into different happiness categories (High, Medium, Low) based on the happiness score.
 
 
-> **Note**: Code must be develop using **Python** and shared in **github**.
-
-> **Note**: **jupyter** notebook should be used for exploratory data analysis (**EDA**).
-
----
-
-In this challenge you will have to **run 2 machine learning** models that solve a problem you'll define from ONE of the provided data sets you will choose and then compare the results.
-
-Keep in mind that the main goal of this challenge is not to get good performance on the models, but rather to validate the process you follow to solve the problem.
-
-#### Tasks you'll need to perfom:
-1. From ONE of the provided data sets below, you must define a problem to solve with supervised learning, specify the target variable and the metric to be used.
-2. Perform an exploratory data analysis (EDA) on the data. During the analysis, make decisions about how the data will be processed, identifying transformations to be carried out during the preparation of the data.
-3. Develop the code to execute the preparation of the data and then execute the models.
-4. Evaluate the models and stablish a comparison between them.
-5. Identify problems that the models have and mention how they could be solved to improve the result.
-
-#### Output expected:
-Github repo including:
-1. Readme with decisions made
-2. Code developed to resolve challenge
-3. Include jupyter notebook inside the repo
-
-#### Possible Datasets to be used for the challenge, you should choose ONLY 1:
-- [Cars Dataset](https://data.world/dataman-udit/cars-data)
-- [US International Air Traffic Dataset](https://www.kaggle.com/datasets/parulpandey/us-international-air-traffic-data)
-- [World Happiness Dataset](https://www.kaggle.com/datasets/unsdsn/world-happiness)
-- [The Boston Housing Dataset](https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html)
-- [Wine Quality Dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality)
+If you encounter any issues or have questions, feel free to open an issue or contact the project maintainer.
